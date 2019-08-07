@@ -9,6 +9,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 // index是目录索引文件  index.js index.vue index.json
 import router from '@/router'
 
+// 导入样式
+import '@/styles/index.less'
+
+// 导入axios
+import axios from 'axios'
+Vue.prototype.$http = axios
+
 // 产品级别提示-不开启
 Vue.config.productionTip = false
 
